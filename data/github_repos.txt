@@ -1,0 +1,125 @@
+GitHub Profile: crazyshrut (Shruti Verma)
+Total Repositories: 42
+Profile URL: https://github.com/crazyshrut
+
+===
+
+Repository: GeoPayLog
+URL: https://github.com/crazyshrut/GeoPayLog
+Language: JavaScript
+Description: A frictionless expense tracker that answers "Where does my money go?" Built with React Native + Node.js. Zero login, just GPS-tagged spending insights.
+Tech Stack: React Native (frontend), Node.js + Express (backend), MongoDB (database), Expo (development)
+Purpose: Built as a mobile app to help users track daily expenses with automatic GPS location tagging. The idea was to remove friction - no sign-up needed, just open and start logging.
+Tradeoffs: Chose React Native over native for faster development across platforms. Used MongoDB for flexible schema since expense categories can vary. Went with Expo for easier development but it limits some native module access. No authentication means data is device-local only.
+Key Features: GPS-based expense tagging, city-wise spending summaries, visual charts for spending patterns
+
+===
+
+Repository: ImageEditor
+URL: https://github.com/crazyshrut/ImageEditor
+Language: Java
+Description: A matrix-based command line image editor coded in Java on VS Code.
+Tech Stack: Java (core), matrix operations for pixel manipulation
+Purpose: Built as a learning project to understand image processing fundamentals using matrix operations. All image transformations (rotation, blur, sharpen, etc.) are done through direct pixel manipulation.
+Tradeoffs: Command-line only - no GUI. Chose Java for strong typing and matrix handling. Processes images as 2D arrays which is memory-intensive for large images but simple to understand and implement.
+Key Features: Image rotation, blur, sharpen, grayscale conversion, brightness adjustment - all through matrix math
+
+===
+
+Repository: task-manager
+URL: https://github.com/crazyshrut/task-manager
+Language: JavaScript
+Description: A simple task manager web app made with MERN stack.
+Tech Stack: MongoDB, Express.js, React, Node.js (MERN)
+Purpose: Full-stack web app for managing tasks/todos. Built to learn the complete MERN stack.
+Tradeoffs: Used MERN for full JavaScript across the stack which simplified development. No authentication in the initial version. MongoDB chosen for schema flexibility over SQL.
+
+===
+
+Repository: rn_assignment_midterm
+URL: https://github.com/crazyshrut/rn_assignment_midterm
+Language: TypeScript
+Description: Mid-term Assignment of React Native course - Pocket ecommerce
+Tech Stack: React Native, TypeScript, Expo
+Purpose: A pocket e-commerce application built as a mid-term assignment. Demonstrates mobile app development skills with TypeScript for type safety.
+Tradeoffs: TypeScript adds overhead in development but catches bugs early. Used Expo for quick prototyping. Focused on UI/UX patterns common in e-commerce apps.
+
+===
+
+Repository: snake-ladder-lld
+URL: https://github.com/crazyshrut/snake-ladder-lld
+Language: Java
+Description: Low-Level Design implementation of Snake and Ladder game
+Tech Stack: Java, Object-Oriented Design
+Purpose: Demonstrates LLD skills - implemented the classic Snake & Ladder game using proper OOP principles, design patterns, and clean code practices.
+Tradeoffs: Focus was on clean design over features. Used Java for strong OOP support.
+
+===
+
+Repository: sst-LLD-assignment-weekly
+URL: https://github.com/crazyshrut/sst-LLD-assignment-weekly
+Language: Java
+Description: Weekly LLD assignments from Scaler School of Technology
+Tech Stack: Java, Design Patterns, SOLID Principles
+Purpose: Collection of Low-Level Design assignments covering various design patterns and OOP concepts.
+
+===
+
+Repository: drove (Forked from PhonePe/drove)
+URL: https://github.com/crazyshrut/drove
+Language: Java
+Description: Distributed container orchestrator - Open source contribution to PhonePe
+Tech Stack: Java, Distributed Systems
+Purpose: Contributed to PhonePe's open-source container orchestration platform. Worked on project documentation improvements.
+
+===
+
+Repository: drove-cli (Forked from PhonePe/drove-cli)
+URL: https://github.com/crazyshrut/drove-cli
+Language: Python
+Description: Command line client for the Drove Container Orchestrator - Open source contribution to PhonePe
+Tech Stack: Python, CLI tools
+Purpose: Contributed documentation fixes and typo corrections to PhonePe's CLI tool for their container orchestrator.
+
+===
+
+Repository: Random-Quote-Generator
+URL: https://github.com/crazyshrut/Random-Quote-Generator
+Language: CSS, JavaScript, HTML
+Description: A random quote generator web application
+Tech Stack: HTML, CSS, JavaScript (vanilla)
+Purpose: Simple web project that displays random quotes. Built to practice frontend fundamentals.
+
+===
+
+Repository: My_API
+URL: https://github.com/crazyshrut/My_API
+Language: Java
+Description: Custom API project built in Java
+Tech Stack: Java, REST API
+Purpose: Built a REST API from scratch in Java to understand API development fundamentals.
+
+===
+
+Repository: webpage_portfolio
+URL: https://github.com/crazyshrut/webpage_portfolio
+Language: HTML
+Description: Personal portfolio website
+Tech Stack: HTML, CSS
+Purpose: Personal portfolio page showcasing projects and skills.
+
+===
+
+Repository: major-project-rn
+URL: https://github.com/crazyshrut/major-project-rn
+Language: JavaScript
+Description: Major project in React Native
+Tech Stack: React Native, JavaScript
+Purpose: Final/major project for React Native course.
+
+===
+
+Repository: job-portal
+URL: https://github.com/crazyshrut/job-portal
+Description: Job portal application
+Purpose: Web application for job listings and applications.

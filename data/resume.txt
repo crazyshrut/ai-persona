@@ -1,0 +1,79 @@
+Shruti Verma
+Contact: +91-7906228869 | shrutiverma032003@gmail.com
+GitHub: https://github.com/crazyshrut
+LinkedIn: linkedin.com/in/shruti-verma
+Portfolio: available online
+
+About me:
+I am a product-thinking techie. I love solving critical problems and have an interest in macro photography.
+I am currently pursuing Computer Science from BITS Pilani and also doing a Software Engineering certification from Scaler School of Technology.
+
+---
+
+WORK EXPERIENCE
+
+1. Product Management Intern at GoKiwi Credit Card (Jan 2026 - March 2026, Bangalore)
+- Led the launch of an in-app gift card product discovery widget, achieving 30% CTR and driving 11% growth in voucher sales.
+- Improved bill payment retention by identifying funnel drop-offs in Mixpanel and running hypothesis-driven lifecycle experiments across user touchpoints, increasing campaign CTR by 25% and boosting repeat bill payment transactions.
+- Led the rollout of 'Refresh Bill' feature enabling users to fetch real-time bill amounts for FASTag, electricity, and postpaid, addressing stale bill issues and improving accuracy in the bill payment flow.
+
+2. Product Management Intern at FirstClub (Aug 2025 - Nov 2025, Bangalore)
+- Designed the 'Notify Me' feature for out-of-stock items to capture latent demand and improve restock conversion.
+- Automated LimeChat flows, reducing manual campaign effort and enabling consistent daily lifecycle engagement.
+- Led a WhatsApp rating campaign via LimeChat reaching 2,000+ users with 82% delivery, 22% response, and 4.72 stars rating.
+- Replaced post-delivery SMS with transactional push notifications for order delivery and bag returns, improving automation.
+
+3. Product Manager Intern at WittingAI (May 2025 - Aug 2025, Remote)
+- Supported v1 development by writing PRDs for the Data Intelligence Agent and coordinating with 3+ cross-functional teams.
+- Conducted research across 10+ AI tools and surveyed 20+ users to understand workflows, pain points, and adoption signals.
+- Translated insights into a data-driven product plan, improving prioritization clarity and team alignment by 30%.
+
+4. Machine Learning Research Intern at IIT Delhi (May 2025 - Aug 2025, New Delhi)
+- Developed brain-signal-controlled prosthetics using a 32-channel EEG acquisition setup.
+- Built ML models decoding brain signals with 80% accuracy and approx. 150ms latency.
+- Extracted 15+ EEG features and reduced pipeline size by 75% using Principal Component Analysis.
+
+---
+
+EDUCATION
+
+1. Birla Institute of Technology and Science (BITS Pilani), Hyderabad
+   - Bachelor of Science in Computer Science (Hons.), July 2023 - July 2026
+
+2. Scaler School of Technology, Bangalore
+   - Certification Course in Software Engineering, July 2023 - July 2027
+
+---
+
+PROJECTS
+
+1. Product Strategy Case Study: Cult 'Night Owl' | Product Strategy, Cohort Analysis, KPI Design (Dec 2025)
+   - Defined target cohort, constraints, and success metrics for a shift-aligned fitness experience.
+   - Designed a shift-aligned fitness model with adaptive schedules, pricing assumptions, and fatigue-aware sessions.
+
+2. Delhivery Case Study | Python, Pandas, NumPy, Visualization (Nov 2024)
+   - Analyzed 144,000+ logistics records, engineered key features, cleaned data, and derived insights using hypothesis testing and visual analysis to optimize routes and efficiency.
+
+3. Logo Detection | YOLOv5, Python (June 2024)
+   - Built a logo detection system for Coke/Pepsi using YOLOv5; achieved 94.5% accuracy with timestamp localization on video frames using Roboflow dataset.
+
+4. Aerofit | Python, Pandas, NumPy, Seaborn (Mar 2024)
+   - Performed EDA on customer demographics and purchasing patterns using visualizations (countplots, histograms, boxplots) to uncover trends and support sales insights.
+
+---
+
+OPEN SOURCE CONTRIBUTIONS
+
+- PhonePe-drove-orchestrator: Developed project documentation.
+- PhonePe-drove-cli: Corrected documentation typos.
+- Vaibhav-Code-Club: Created learn.md under GSSoC.
+- Building-u-feedback: Improved sign-up page UI.
+
+---
+
+SKILLS
+
+Tools: Mixpanel, GA4, Clevertap, WebEngage, Figma, Jira, Notion, Postman, Power BI, Tableau, AWS EC2
+Product & Strategy: Product Strategy, Cohort Analysis, Behavioral Insights, User Research, PRD Writing, Feature Prioritization, Roadmapping, GTM Strategy, Experimentation, KPI Design, Data Storytelling
+Technical: Java, Python, API Understanding, System Thinking
+Analytics & Data: Product Analytics, SQL, Funnel Analysis, Hypothesis Testing, Statistical Analysis, BigQuery, Pandas, NumPy
