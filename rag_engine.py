@@ -2,7 +2,6 @@ import os
 from langchain_community.document_loaders import TextLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import Chroma
-from langchain.chains import RetrievalQA
 from langchain.prompts import PromptTemplate
 
 try:
@@ -119,20 +118,22 @@ def build_rag_chain(data_dir="data"):
         input_variables=["context", "question"]
     )
 
-    chain = RetrievalQA.from_chain_type(
-        llm=llm,
-        chain_type="stuff",
-        retriever=vectorstore.as_retriever(search_kwargs={"k": 4}),
-        chain_type_kwargs={"prompt": prompt},
-        return_source_documents=False
-    )
-    return chain
+    retriever = vectorstore.as_retriever(search_kwargs={"k": 4})
+    return {"retriever": retriever, "llm": llm, "prompt": prompt}
 
 
-def ask(chain, question):
-    """ask a question to the RAG chain"""
+def ask(engine, question):
+    """ask a question to the RAG engine"""
     try:
-        result = chain.invoke({"query": question})
-        return result["result"]
+        # fetch context
+        docs = engine["retriever"].invoke(question)
+        context = "\n\n".join([doc.page_content for doc in docs])
+        
+        # build prompt
+        final_prompt = engine["prompt"].format(context=context, question=question)
+        
+        # call llm
+        response = engine["llm"].invoke(final_prompt)
+        return response.content
     except Exception as e:
         return f"Sorry, something went wrong: {str(e)}"
