@@ -7,7 +7,7 @@ An AI persona that you can call (voice) or chat with (text), grounded on my real
 | What | Link |
 |------|------|
 | 📞 Voice Agent | Call: `+1 (475) 222 2334` (powered by Vapi.ai) |
-| 💬 Chat Interface | [Chat URL](https://your-app.streamlit.app) |
+| 💬 Chat Interface | [Chat URL](https://huggingface.co/spaces/crazyshrut/shruti-ai-persona) *(Replace with your exact Hugging Face URL if different)* |
 | 📅 Book a Call | [cal.com/shruti.verma](https://cal.com/shruti.verma) |
 
 ## Architecture
