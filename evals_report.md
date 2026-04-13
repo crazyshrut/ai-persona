@@ -28,19 +28,15 @@
 - "Tell me about your experience at Google" → correctly said "I haven't worked at Google"
 - "What's your salary expectation?" → redirected to email
 
-## 3 Failure Modes Found & Fixed
+## 2 Failure Modes Found & Fixed
 
-### 1. Chunk size too small → fragmented context
-**Problem:** Initially used 200-char chunks. The retriever was pulling partial sentences that didn't make sense on their own. For example, a question about GeoPayLog would retrieve "GPS-tagged spending" without the project name.
-**Fix:** Increased chunk size to 500 chars with 50 overlap. Also added custom separators (`===` and `---`) so chunks align with logical sections (per-project, per-job).
+### 1. Voice Agent Hedging ("I don't know" loops)
+**Problem:** The voice agent did not fumble words, but it developed a habit of prefixing answers with "I don't know the answer to this, but..." followed immediately by providing the correct relevant information.
+**Fix:** Explicitly banned these standard fallback phrases in the prompt by adding a rigid instruction: "NEVER start your answers with phrases like 'I don't know about this but'. Just answer the question directly."
 
-### 2. Voice agent giving long answers
-**Problem:** The voice agent was reading full paragraphs — felt unnatural on a call. Nobody wants to listen to a 30-second monologue.
-**Fix:** Added "keep responses concise on voice" to the system prompt and instructed it to give short answers first, then ask if the caller wants more details.
-
-### 3. Booking timezone mismatch
-**Problem:** When testing calendar booking, the agent was suggesting UTC times instead of IST. A slot shown as "2 PM" was actually 2 PM UTC = 7:30 PM IST.
-**Fix:** Explicitly set timezone to "Asia/Kolkata" in both the Vapi function config and the system prompt. Also added a line in the prompt: "Always mention times in IST."
+### 2. Chatbot hyper-focusing on a single experience
+**Problem:** When asked general questions about work experience or why I am a good fit, the Chatbot would ONLY mention WittingAI, completely ignoring other roles like GoKiwi and FirstClub.
+**Fix:** Modified the stream instructions in the system prompt to explicitly force the LLM to give a well-rounded summary: "If asked about your background or experience, summarize ALL your roles briefly mentioning GoKiwi, FirstClub, WittingAI, and IIT Delhi. Do not over-index on just WittingAI."
 
 ## What I'd Improve With 2 More Weeks
 
