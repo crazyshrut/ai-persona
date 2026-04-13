@@ -28,15 +28,19 @@
 - "Tell me about your experience at Google" → correctly said "I haven't worked at Google"
 - "What's your salary expectation?" → redirected to email
 
-## 2 Failure Modes Found & Fixed
+## 3 Behavioral Failure Modes Found & Fixed
 
-### 1. Voice Agent Hedging ("I don't know" loops)
-**Problem:** The voice agent did not fumble words, but it developed a habit of prefixing answers with "I don't know the answer to this, but..." followed immediately by providing the correct relevant information.
-**Fix:** Explicitly banned these standard fallback phrases in the prompt by adding a rigid instruction: "NEVER start your answers with phrases like 'I don't know about this but'. Just answer the question directly."
+### 1. The "I Don't Know" Hedging Loop (Voice Agent)
+**Problem:** After every question asked on the call, the voice bot would explicitly say "I don't know the answer to this, but I know..." and *then* proceed to give the correct, relevant information.
+**Fix:** Modified the system prompt with strict constraints: "NEVER start your answers with phrases like 'I don't know about this but'. Just answer the question directly."
 
-### 2. Chatbot hyper-focusing on a single experience
-**Problem:** When asked general questions about work experience or why I am a good fit, the Chatbot would ONLY mention WittingAI, completely ignoring other roles like GoKiwi and FirstClub.
-**Fix:** Modified the stream instructions in the system prompt to explicitly force the LLM to give a well-rounded summary: "If asked about your background or experience, summarize ALL your roles briefly mentioning GoKiwi, FirstClub, WittingAI, and IIT Delhi. Do not over-index on just WittingAI."
+### 2. The "Hello then Silence" Drop-off (Voice Agent)
+**Problem:** During calls, the agent would successfully initiate the conversation by saying "Hello," but when asked a question, it would freeze and remain completely silent instead of responding.
+**Fix:** Diagnosed this as an issue where the AI provider drops the connection. Adjusted the provider settings and Voice Activity Detection (silence timeouts) inside the Vapi dashboard so the agent waits and processes properly without going silent.
+
+### 3. Single-Experience Tunnel Vision (Chatbot & Voice Agent)
+**Problem:** When asked general, open-ended questions about work experience or why I am a good fit, the AI hyper-focused and exclusively mentioned only one internship (WittingAI), completely omitting other major roles like GoKiwi and FirstClub.
+**Fix:** Explicitly forced the LLM to provide a balanced overview by adding a rule to the prompt: "If asked about your background or experience, summarize ALL your roles briefly mentioning GoKiwi, FirstClub, WittingAI, and IIT Delhi. Do not over-index on just WittingAI."
 
 ## What I'd Improve With 2 More Weeks
 
