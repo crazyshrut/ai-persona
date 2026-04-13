@@ -6,9 +6,9 @@ An AI persona that you can call (voice) or chat with (text), grounded on my real
 
 | What | Link |
 |------|------|
-| 📞 Voice Agent | Call: `+1 (475) 222 2334` (powered by Vapi.ai) |
-| 💬 Chat Interface | [Chat URL](https://huggingface.co/spaces/crazyshrut/shruti_ai_persona_teller) |
-| 📅 Book a Call | [cal.com/shruti.verma](https://cal.com/shruti.verma) |
+|  Voice Agent | Call: `+1 (475) 222 2334` (powered by Vapi.ai) |
+|  Chat Interface | [Chat URL](https://huggingface.co/spaces/crazyshrut/shruti_ai_persona_teller) |
+|  Book a Call | [cal.com/shruti.verma](https://cal.com/shruti.verma) |
 
 ## Architecture
 

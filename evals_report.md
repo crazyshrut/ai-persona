@@ -25,7 +25,7 @@
 
 **Sample edge cases tested:**
 - "What's your GPA?" → correctly said "I don't have that information"
-## 🏆 The Testing Gold Mine: Stress-Testing My Own AI
+##  The Testing Gold Mine: Stress-Testing My Own AI
 
 As a product thinker, I know that just getting the "happy path" working isn't enough. I put on my PM and AI Engineer hats and actively tried to break my own AI to expose its vulnerabilities. Honestly, comparing what I expected versus what the LLM actually did was an absolute gold mine for learning.
 
